@@ -10,6 +10,10 @@ import Age from './components/props/Age.jsx'
 import MultipleProps from './components/props/MultipleProps.jsx'
 import Destructuring from './components/props/Destructuring.jsx'
 import InteractiveDemo from './components/UseStateHook/InteractiveDemo.jsx'
+
+import ButtonActions from './components/Events/ButtonActions.jsx'
+import InputHandler from './components/Events/InputHandler.jsx'
+import UserInteraction from './components/Events/UserInteraction.jsx'
 function App() {
   
 
@@ -21,7 +25,10 @@ function App() {
      {/* <Age Age={20}/>
      <MultipleProps City="Surat" State="Gujarat"/>
      <Destructuring name="Umesh" age={19} city="Ahmedabad" work="Developer" /> */}
-     <InteractiveDemo/>
+     {/* <InteractiveDemo/> */}
+     {/* <ButtonActions/> */}
+     {/* <InputHandler/> */}
+     <UserInteraction/>
     </>
   )
 }
