@@ -22,6 +22,8 @@ import RenderObjects from './components/Lists & Keys/RenderObjects.jsx'
 import RemoveFromList from './components/Lists & Keys/RemoveFromList.jsx'
 import LiveInput from './components/Forms/LiveInput.jsx'
 import LoginForm from './components/Forms/LoginForm.jsx'
+import ComponentLogger from './components/UseEffect/ComponentLogger.jsx'
+import IntervalCounter from './components/UseEffect/IntervalCounter.jsx'
 function App() {
   
 
@@ -44,7 +46,9 @@ function App() {
      {/* <RenderObjects/> */}
      {/* <RemoveFromList /> */}
      {/* <LiveInput/> */}
-     <LoginForm/>
+     {/* <LoginForm/> */}
+     {/* <ComponentLogger/> */}
+     {/* <IntervalCounter/> */}
     </>
   )
 }
