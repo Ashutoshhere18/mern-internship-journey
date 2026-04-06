@@ -14,6 +14,9 @@ import InteractiveDemo from './components/UseStateHook/InteractiveDemo.jsx'
 import ButtonActions from './components/Events/ButtonActions.jsx'
 import InputHandler from './components/Events/InputHandler.jsx'
 import UserInteraction from './components/Events/UserInteraction.jsx'
+import RoleBasedUI from './components/Conditional-Rendering/RoleBasedUI.jsx'
+import ToggleButton from './components/Conditional-Rendering/ToggleButton.jsx'
+import CountMessage from './components/Conditional-Rendering/CountMessage.jsx'
 function App() {
   
 
@@ -28,7 +31,10 @@ function App() {
      {/* <InteractiveDemo/> */}
      {/* <ButtonActions/> */}
      {/* <InputHandler/> */}
-     <UserInteraction/>
+     {/* <UserInteraction/> */}
+     {/* <RoleBasedUI/> */}
+     {/* <ToggleButton/> */}
+     <CountMessage/>
     </>
   )
 }
