@@ -17,6 +17,9 @@ import UserInteraction from './components/Events/UserInteraction.jsx'
 import RoleBasedUI from './components/Conditional-Rendering/RoleBasedUI.jsx'
 import ToggleButton from './components/Conditional-Rendering/ToggleButton.jsx'
 import CountMessage from './components/Conditional-Rendering/CountMessage.jsx'
+import RenderNumbers from './components/Lists & Keys/RenderNumbers.jsx'
+import RenderObjects from './components/Lists & Keys/RenderObjects.jsx'
+import RemoveFromList from './components/Lists & Keys/RemoveFromList.jsx'
 function App() {
   
 
@@ -34,7 +37,10 @@ function App() {
      {/* <UserInteraction/> */}
      {/* <RoleBasedUI/> */}
      {/* <ToggleButton/> */}
-     <CountMessage/>
+     {/* <CountMessage/> */}
+     {/* <RenderNumbers/> */}
+     {/* <RenderObjects/> */}
+     <RemoveFromList />
     </>
   )
 }
