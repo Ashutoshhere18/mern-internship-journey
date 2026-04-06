@@ -11,7 +11,7 @@ import {useState} from 'react'
 export default function EventHandlingDemo() {
 
 const [isDisplay,setIsDisplay]=useState(true);
-const [input,setInput]=useState("");
+
 
 
  const handleClick=()=>{
