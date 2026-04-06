@@ -24,6 +24,7 @@ import LiveInput from './components/Forms/LiveInput.jsx'
 import LoginForm from './components/Forms/LoginForm.jsx'
 import ComponentLogger from './components/UseEffect/ComponentLogger.jsx'
 import IntervalCounter from './components/UseEffect/IntervalCounter.jsx'
+import FetchUsers from './components/API-Calls/FetchUsers.jsx'
 function App() {
   
 
@@ -49,6 +50,7 @@ function App() {
      {/* <LoginForm/> */}
      {/* <ComponentLogger/> */}
      {/* <IntervalCounter/> */}
+     <FetchUsers/>
     </>
   )
 }
