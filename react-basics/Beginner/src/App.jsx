@@ -20,6 +20,8 @@ import CountMessage from './components/Conditional-Rendering/CountMessage.jsx'
 import RenderNumbers from './components/Lists & Keys/RenderNumbers.jsx'
 import RenderObjects from './components/Lists & Keys/RenderObjects.jsx'
 import RemoveFromList from './components/Lists & Keys/RemoveFromList.jsx'
+import LiveInput from './components/Forms/LiveInput.jsx'
+import LoginForm from './components/Forms/LoginForm.jsx'
 function App() {
   
 
@@ -40,7 +42,9 @@ function App() {
      {/* <CountMessage/> */}
      {/* <RenderNumbers/> */}
      {/* <RenderObjects/> */}
-     <RemoveFromList />
+     {/* <RemoveFromList /> */}
+     {/* <LiveInput/> */}
+     <LoginForm/>
     </>
   )
 }
