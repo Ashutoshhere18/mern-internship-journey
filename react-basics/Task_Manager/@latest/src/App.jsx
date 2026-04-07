@@ -5,7 +5,6 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import TaskInput from './components/TaskInput'
 import TaskList from './components/TaskList'
-import TaskItem from './components/TaskItem'
 import FilterBar from './components/FilterBar'
 
 function App() {
