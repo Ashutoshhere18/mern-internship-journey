@@ -10,7 +10,7 @@ import FilterBar from './components/FilterBar'
 
 function App() {
  
-  const [task,setTask]=useState([]);
+  const [tasks,setTasks]=useState([]);
   const [filter,setFilter]=useState("all");
 
   const addTask=(title)=>{
@@ -21,34 +21,43 @@ function App() {
       createdAt: new Date(),
      }
 
-     setTask((prevTask)=>[...prevTask,newTask]);
+     setTasks((prevTask)=>[...prevTask,newTask]);
   }
 
  const deleteTask=(id)=>{
     
-    const newTask=task.filter((t)=>t.id!==id);
+    const newTask=tasks.filter((t)=>t.id!==id);
   
-    setTask(newTask);
+    setTasks(newTask);
  }
 
 const toggleTask=(id)=>{
 
- const updatedTask= task.map((t)=>{
+ const updatedTask= tasks.map((t)=>{
   if(t.id===id){
       return{...t,completed:!t.completed}
   }
   return t;
  });
 
- setTask(updatedTask);
+ setTasks(updatedTask);
 }
 
 
+const changeFilter=(type)=>{
+setFilter(type);
+}
+
+const filteredTask= tasks.filter((t)=>{
+  if(filter=="completed") return t.completed;
+  if(filter=="pending") return !t.completed;
+  return true;
+})
   return (
     <>
       <TaskInput addTask={addTask}/>
-      <TaskList tasks={task} deleteTask={deleteTask} toggleTask={toggleTask}/>
-      <FilterBar/>
+      <TaskList tasks={filteredTask} deleteTask={deleteTask} toggleTask={toggleTask}/>
+      <FilterBar changeFilter={changeFilter}/>
     </>
   )
 }
