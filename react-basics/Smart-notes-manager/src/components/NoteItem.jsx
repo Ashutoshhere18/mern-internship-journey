@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function NoteItem({note,deleteNotes}) {
+export default function NoteItem({note,deleteNotes,togglePinned}) {
   return (
    <>
      <div className="card h-100 shadow-sm">
@@ -14,6 +14,7 @@ export default function NoteItem({note,deleteNotes}) {
            <strong>Priority:</strong> <span className={`badge bg-${note.priority === 'high' ? 'danger' : note.priority === 'medium' ? 'warning' : 'success'}`}>{note.priority}</span>
          </p>
          <button onClick={()=>deleteNotes(note.id)} className='btn btn-danger btn-sm mt-3'>Delete</button>
+         <button onClick={()=>togglePinned(note.id)} className='btn btn-info btn-sm mt-3'>pinned</button>
        </div>
      </div>
    </>

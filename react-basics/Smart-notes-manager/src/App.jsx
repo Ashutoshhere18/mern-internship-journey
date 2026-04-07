@@ -62,7 +62,7 @@ function App() {
   return (
     <>
       <NoteInput addNotes={addNotes} />
-      <NoteList notes={notes} deleteNotes={deleteNotes} toggl />
+      <NoteList notes={notes} deleteNotes={deleteNotes} togglePinned={togglePinned} />
      
       
     </>
